@@ -1,0 +1,625 @@
+/* 
+ * Diseñador: David Adriel Gonzalez Zaccara
+ * Fecha: 01/11/2021 
+ * Bariloche Rio negro
+ */
+
+/*--------------------------------------------------------------
+Reseto CSS
+--------------------------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+/*--------------------------------------------------------------
+Tipografia
+--------------------------------------------------------------*/
+body {
+	font-family: 'Roboto', Arial, sans-serif;
+	line-height: 1.5;
+}
+/*--------------------------------------------------------------
+Estilos General 
+--------------------------------------------------------------
+ ------------  Header -------------- */
+    .body{
+        background: #ededed;
+    }   
+    .header {
+        display: flex;
+        background-color: #38356e;
+        border-bottom: 5px solid #fff;
+        padding: 30px 30px;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+    .header_logo {
+        color: #fff;
+    }
+    .header_list {
+        display: flex;
+        list-style: none;
+    }
+    .header_item {
+        margin: 0px 15px;
+    }
+    
+    .header_links {
+            margin-left: 10px;
+            text-decoration: none;
+            color: #fff;   
+    }
+    .activo{
+        color: rgb(138, 138, 138);
+    }
+    .header_links:hover { 
+        color: rgb(138, 138, 138); 
+    } 
+
+/* ------------ Fin Header -------------- */
+
+/* ------------  Index  General-------------- */
+
+    .main{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: auto;
+    }
+
+/* Hero Estandar */
+
+    .hero{
+        display: flex;
+        background-color: #38356e;
+        height: 80vh;
+        align-items: center;
+    }
+    .hero_box{
+        width: 50%;
+    }
+    
+    .hero_titulo{
+        color: #fff;
+        font-size: 4.5rem;
+        position: relative;
+        left: 100px;
+    }
+    .hero_parrafo{
+        margin-top: 10px;
+        color: #fff;
+        position: relative;
+        left: 100px;
+        font-size: 1rem;
+    }
+    .hero_boton_contenedor{
+        margin-top: 20px;
+        color: #fff;
+        position: relative;
+        left: 100px;
+        font-size: 1rem;
+    }
+    .hero_imagen {
+        max-height: 390px;
+        align-items: center;
+    }
+
+/* Fin Hero Estandar */
+
+    .box_dos{
+        display: flex;
+        justify-content: center;
+    }
+    .iconos_inicio{
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .icono_box{
+        display: flex;
+        flex-direction: column;
+        max-height: 350px;
+        width: 350px;
+        padding: 20px;
+        align-items: center;
+    }
+    .icono_imagen{
+        height: 200px;
+        width: 200px;
+    }
+    .icono_titulo{
+        text-align: center;
+    }
+    .icono_parrafo{
+        text-align: center;
+    
+    }
+    .info_box_imag{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        left:100px;
+        background-color: #38356e;
+        padding: 100px;
+    }
+    .info_box_imag_box{
+        width: 50%;
+    }
+    .info_box_imag_imag{
+        width: 75%;
+    }
+    .info_box_titulo{
+        font-size: 3rem;
+        color: #fff;
+    }
+    .info_box_tituloDos{
+        font-size: 15px;
+        margin-top: 15px;
+        color: #fff;
+    }
+    .info_box_parrafo{
+        margin-top: 15px;
+        color: #fff;
+    }
+    .box_repetida{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    .box_repetidaTitulo {
+        text-align: center;
+        margin-top: 60px;
+        font-size: 3rem;
+    }
+    .box_repetidaBoton{
+        margin: 55px;
+    
+    }
+    
+    .boton_personalizado{
+        text-decoration: none;
+        padding: 10px;
+        font-weight: 600;
+        font-size: 20px;
+        color: #ffffff;
+        background-color: #1883ba;
+        border-radius: 6px;
+      }
+      .boton_personalizado:hover{
+        color: #1883ba;
+        background-color: #ffffff;
+      }
+    
+/* ------------ Fin Index  General-------------- 
+Grids
+*/
+.grid-contenedor-body{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: "header"
+                       "main"
+                       "footer";
+}
+
+.grid-header{
+    grid-area: header;
+}
+.grid-main{
+    grid-area: main;
+}
+.grid-footer{
+    grid-area: footer;
+}
+
+
+/* 
+Fin Grids
+------------  Estilos footer  -------------- */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #38356e;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer_contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.footer_logoText{
+    position: relative;
+    left: 100px;
+    width: 25%;
+
+}
+.footer_tituloLogo{ 
+    font-size: 40PX;
+    color: #FFF;
+}
+.footer_tituloParrafo{
+    margin-top: 10PX;
+    color: rgb(221, 221, 221);
+}
+.footer_nav{
+}
+.footer_tituloNav{
+    color: rgb(255, 255, 255);
+}
+.footer_ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;    
+}
+.footer_item{
+}
+.footer_links{
+        text-decoration: none;
+        color: #fff;
+        padding: 0;
+}
+.footer_menu{
+    width: 25%;
+    position: relative;
+    left: 150px;
+
+}
+.footer_menuEnlace{
+    width: 20%;
+
+}
+.footer_menuContacto{
+    left: 100px;
+    width: 20%;
+
+}
+.footer_copy{
+    border-top: 2px solid #fff;
+    width: 90%;
+}
+.footer_copyParrafo{
+    text-align: center;
+    color:#fff;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* ------------ Registro-------------- */
+
+    .registro_titulo{
+        font-size: 90px;
+    }
+    .registro_botonContenedor{
+    
+    }
+    .registro_boton{
+    
+    }
+    .registro_contenedor{
+        display: flex;
+        background-color: #fff;
+        border-radius: 15%;
+        width: 350px;
+        height: 350px;
+        justify-content: center;
+        align-items: center;
+    }
+    .form_registro{
+        display: flex;
+        flex-direction: column;
+    }
+    .form_registroContenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        height: 60px;
+    
+    }
+    .form_registroContenedorDos{
+        text-align: center;
+        width: 300px;
+        height: 40px;
+    
+    }
+    .form_registroLabel{
+        font-size: 20px;
+    }
+    .form_registroInput{
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .form_registroSubmit{
+        margin-top: 10px;
+        width: 30%;
+    }
+    .form_registroCheckbox{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+/* ------------ Fin Registro-------------- */
+
+/* ------------ Sobre Nosotros -------------- */
+.hero_sobre {
+    display: flex;
+    text-align: center;
+    background-color: #ffffff;
+    height: 80vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+ .sobre_titulo{
+    color: rgb(0, 0, 0);
+    font-size: 4rem;
+}
+.info_box_imagSobre {
+    width: 100%;
+}
+.iconos_equipo {
+    display: flex;
+    background-color: #f8f9fd;
+    height: auto;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.icono_equipoBox {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    max-height: inherit;
+    width: auto;
+    padding: 20px;
+}
+.icono_equipoContenedor{
+    width: auto;
+    height: auto;
+}
+.icono_equipoImagen{
+    max-height: 400px;
+}
+.icono_equipoTitulo{
+    margin-top: 15px;
+    text-align: center;
+
+}
+
+/* ------------ Fin Sobre Nosotros -------------- */
+
+/* ------------ Contacto -------------- */
+.hero_contacto{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+.contacto_box {
+    width: 50%;
+    text-align: center;
+    background-color: #fff;
+    display: flex;
+    height: 450px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ------------ Fin Contacto -------------- */
+
+/* Estilos moviles */
+
+@media screen and (max-width: 1024px){
+    .header{
+        position: static;
+    }
+    .hero_titulo {
+        font-size: 3.5rem;
+    }
+    .hero_imagen {
+        max-height: 300px;
+    }
+    .info_box_titulo {
+        font-size: 2rem;
+    }
+    .info_box_parrafo {
+        margin-top: 4px;
+        font-size: 1rem;
+    }
+    .info_box_imag_imag {
+        width: 95%;
+    }
+
+    /* sobre nosotros */
+
+    .footer_tituloParrafo {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .header{
+        position: static;
+    }
+    .hero {
+        
+    }
+    .box_dos {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .hero_titulo {
+        font-size: 2rem;
+        left: 50px;
+    }
+    .hero_imagen {
+        max-height: 275px;
+    }
+    .hero_parrafo {
+        font-size: 0.9rem;
+        left: 50px;
+    }
+    .hero_boton_contenedor {
+        left: 50px;
+    }
+    .footer_tituloParrafo {
+        font-size: 0.7rem;
+    }
+    .footer_logoText {
+        left: 50px;
+    }
+    .footer_contenedor {
+        display: flex;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        align-items: baseline;
+        justify-content: center;
+    }
+    .footer_menu {
+        width: 25%;
+        position: relative;
+        left: 77px;
+    }
+    .info_box_titulo {
+        font-size: 1.5rem;
+    }
+    .info_box_imag {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        left: 14px;
+        background-color: #38356e;
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .header {
+        position: static;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .header_list {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero {
+        height: auto;
+        flex-direction: column;
+        justify-content: space-around;    
+    }
+    .hero_titulo {
+        font-size: 2rem;
+        left: 0px;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .hero_parrafo {
+        font-size: 0.9rem;
+        left: 0px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .hero_boton_contenedor {
+        margin-top: 10px;
+        position: relative;
+        text-align: center;
+        left: 0px;
+    }
+    .hero_imagen {
+        max-height: 205px;
+        margin: 70px;
+    }
+    .hero_box {
+        width: 90%;
+    }
+    .info_box_imag_box {
+        width: 90%;
+    }
+    .info_box_imag {
+        padding: 23px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .info_box_imag_imag {
+        width: 75%;
+        margin-top: 10px;
+    }
+    .box_repetidaTitulo {
+        font-size: 1.5rem;
+    }
+    .footer_contenedor {
+        align-content: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        margin: 22px;
+    }
+    .footer_logoText {
+        left: 0px;
+        width: auto;
+    }
+    .footer_menu {
+        width: auto;
+        position: relative;
+        left: 0px;
+        margin: 10px;
+    }
+    .footer_menuEnlace {
+        width: auto;
+        position: relative;
+        left: 0px;
+        margin: 10px;
+    }
+    .footer_menuContacto {
+        width: auto;
+        position: relative;
+        left: 0px;
+        margin: 10px;
+    }
+    .footer_tituloParrafo {
+        font-size: 1rem;
+        margin: 10px;
+    }
+
+    /* sobre nosotros */
+    .sobre_titulo {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 320px){
+
+
+}
+
+
