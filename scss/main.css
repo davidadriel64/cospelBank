@@ -142,6 +142,10 @@ button {
   color: #f500048c;
 }
 
+.img-fluid {
+  max-width: 90% !important;
+}
+
 .footer {
   color: #0dc6fd;
   -webkit-box-shadow: 0px 1px 16px #0a58ca !important;
