@@ -4,55 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="../imagenes/favicon.png">  
+    <link rel="icon" type="image/png" href="../imagenes/favicon.png"> 
     <title>Cospel Bank - Registro</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-
+    <link rel="stylesheet" href="../scss/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-     <div class="container-fluid px-3 py-3">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a class="navbar-brand fs-1 fw-bold" href="#">Cospel</a>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+     <div class="header container-fluid px-3 py-3">
+      <nav class="py-3 navbar navbar-expand-lg fixed-top auto-hiding-navbar border_nav">
+        <div class="container">
+          <a class="navbar-brand fs-1 fw-bold titulo_piola" href="#">Cospel</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ml-auto" style="border-left: 1px solid  #0cbcf0 ;">
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./sobre-nosotros.html">Sobre nosotros</a>
+                <a class="nav-link" href="sobre-nosotros.html">Sobre nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./ingresar.html">Ingresar</a>
+                <a class="nav-link" href="contacto.html">Contacto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="./registro.html">Registrarse</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contacto.html">Contacto</a>
+                <a class="nav-link" aria-current="page" href="../index.html">Descargar </a>
               </li>
             </ul>
+            <div class="d-flex ms-auto">
+              <a href="registro.html" class="btn btn-primary btn-lg px-4 me-md-3" role="button">Registro</a>
+              <a href="ingresar.html" class="btn btn-primary btn-lg px-4 me-md-3" role="button">Ingresar</a>
+            </div>
           </div>
         </div>
       </nav>
     </div>
     <div class="container col-xl-10 col-xxl-8 px-4 py-5">
-        <div class="row align-items-center g-lg-5 py-5">
+        <div class="row align-items-center g-lg-5 py-5 my-3">
           <div class="col-lg-7 text-center text-lg-start">
-            <h1 class="display-4 fw-bold lh-1 mb-3">Registrate</h1>
-            <p class="col-lg-10 fs-4">Manejá tu dinero más fácil, enviá o pedí dinero y pagá lo que vos quieras.</p>
+            <h1 class="display-4 fw-bold lh-1 mb-3 titulo_piola">Registrate</h1>
+            <p class="col-lg-10 fs-4 parrafo_color my-3">Manejá tu dinero más fácil, enviá o pedí dinero y pagá lo que vos quieras.</p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Descargar App</button>
+              <a class="btn btn-primary btn-lg px-4 me-md-2 my-2"  data-bs-toggle="modal" href="#exampleModalToggle" role="button">Descargar app</a>
               </div>
         </div>
-          <div class="col-md-10 mx-auto col-lg-5">
+          <div class="col-md-10 mx-auto col-lg-5 my-3">
             <form class="p-4 p-md-5 border rounded-3 bg-light">
               <div class="form-floating mb-3">
                 <input type="email" class="form-control" id="floatingInput" placeholder="nombre@correo.com">
@@ -68,7 +73,7 @@
               </div>
               <div class="checkbox mb-3">
                 <label>
-                  <input type="checkbox" value="remember-me"> Acepto los terminos y condiciones
+                  <input type="checkbox" value="remember-me"> Acepto los <a href="/pages/tyc.html">terminos y condiciones</a>
                 </label>
               </div>
               <button class="w-100 btn btn-lg btn-primary" type="submit">Registrarse</button>
@@ -79,45 +84,73 @@
           </div>
         </div>
       </div>
-    <footer class="text-center text-lg-start">
-        <section class="my-4">
-          <div class="container text-center text-md-start mt-5 py-4">
-            <div class="row mt-3">
-              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                <h4 class=" fw-bold mb-4">
-                  <i class="fas fa-gem me-3 "></i>Cospel</h4>
-                <p>
-                  Cospelbank es un completo sistema de banca electrónica. Tenemos titulares de cuentas de casi todo el mundo. Nuestro sistema es seguro y robusto.
-                </p>
+      <div data-aos-once="true" data-aos="fade-up" data-aos-duration="1000" class="container my-5">
+        <div class="d-flex justify-content-center align-items-center flex-column">
+            <h1 data-aos="fade-down"  data-aos-duration="1000"class="fw-bold titulo_piola">INVERTÍ EN TU FUTURO. PASATE A COSPEL</h1>
+            <p data-aos="fade-right"  data-aos-duration="1000"class="lead parrafo_color my-3">Estamos parados en una revolución más grande que la de Internet. ¡Estás a tiempo de ser parte!</p>
+             <a class="btn btn-primary btn-lg px-4 me-md-2 my-2"  data-bs-toggle="modal" href="#exampleModalToggle" role="button">Descargar app</a>
+           </div>
+            <footer class="text-center text-lg-start">
+              <section class="my-4">
+                <div class="container text-center text-md-start mt-5 py-4 footer">
+                  <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                      <h4 class=" fw-bold mb-4">
+                        <i class="fas fa-gem me-3 "></i>Cospel</h4>
+                      <p>
+                        Cospelbank es un completo sistema de banca electrónica. Tenemos titulares de cuentas de casi todo el mundo. Nuestro sistema es seguro y robusto.
+                      </p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                      <h6 class=" fw-bold mb-3">Menu</h6>
+                      <p><a href="./index.html" class="text-reset">Inicio</a></p>
+                      <p> <a href="./pages/sobre-nosotros.html" class="text-reset">Sobre nosotros</a></p>
+                      <p><a href="./pages/registro.html" class="text-reset">Registro</a></p>
+                      <p><a href="./pages/ingresar.html" class="text-reset">ingresar</a></p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class=" fw-bold mb-3">Enlaces</h6>
+                      <p><a href="#!" class="text-reset">Politicas</a></p>
+                      <p><a href="#!" class="text-reset">T y C</a></p>
+                      <p><a href="#!" class="text-reset">Aviso legal</a></p>
+                      <p><a href="#!" class="text-reset">Soporte</a></p>
+                    </div>
+                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
+                      <h6 class=" fw-bold mb-3">Contacto</h6>
+                      <p><i class="fas fa-home me-3"></i> Calle Falsa, 123,</p>
+                      <p><i class="fas fa-envelope me-3"></i>demo@gmail.com</p>
+                      <p><i class="fas fa-phone me-3"></i> + 454512418544</p>
+                      <p><i class="fas fa-print me-3"></i> + 354342418654</p>
+                    </div>
+                    </div>
+                  </div>
+              </section>
+              <div class="text-center p-4 footerCopy" >
+                © 2021 Copyright </br> Cospelbank Todos los derechos reservados
               </div>
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                <h6 class=" fw-bold mb-3">Menu</h6>
-                <p><a href="#!" class="text-reset">Inicio</a></p>
-                <p> <a href="#!" class="text-reset">Servicios</a></p>
-                <p><a href="#!" class="text-reset">Registro</a></p>
-                <p><a href="#!" class="text-reset">ingresar</a></p>
+            <!--  Modal descargar app -->
+              <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalToggleLabel"></h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="d-flex flex-column justify-content-center align-items-center">
+                      <h2>DESCARGÁ COSPEL BANK</h2>
+                      <p class="text-center my-3">¡Comprá Bitcoin, Ethereum y otras criptomonedas de la forma más fácil!
+                      Obtené ganancias en crypto todas las semanas y usalas para pagar lo que quieras.
+                      </p>
+                      <button type="button" class="btn btn-success my-3">Ir al enlace</button>
+                    </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-               <h6 class=" fw-bold mb-3">Enlaces</h6>
-                <p><a href="#!" class="text-reset">Politicas</a></p>
-                <p><a href="#!" class="text-reset">T y C</a></p>
-                <p><a href="#!" class="text-reset">Aviso legal</a></p>
-                <p><a href="#!" class="text-reset">Soporte</a></p>
-              </div>
-             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                <h6 class=" fw-bold mb-3">Contacto</h6>
-                <p><i class="fas fa-home me-3"></i> Calle Falsa, 123,</p>
-                <p><i class="fas fa-envelope me-3"></i>demo@gmail.com</p>
-                <p><i class="fas fa-phone me-3"></i> + 454512418544</p>
-                <p><i class="fas fa-print me-3"></i> + 354342418654</p>
-              </div>
-               </div>
-            </div>
-        </section>
-        <div class="text-center p-4" >
-          © 2021 Copyright - Cospelbank Todos los derechos reservados
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-       </footer>
-    </body>
-    </html>
+              <!--  Fin modal descargar app -->
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+            </footer>
+          </div>
+</body>
+</html>
