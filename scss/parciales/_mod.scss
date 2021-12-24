@@ -1,0 +1,19 @@
+@import url(./_var.scss);
+
+.text_shadow {
+    TEXT-SHADOW: 0 0 20px rgba(0, 0, 0, 0.411);
+}
+.form_sesion {
+    background-color: #031f34e8 !important;
+    color: #fff;
+    box-shadow: 0px 1px 20px 10px #0a58ca !important;
+}
+.text_black {
+    color: black;
+}
+.btn-primary {
+    background-color: #031f34 !important;
+}
+.btn-primary:hover {
+    background-color: #0091ff !important;
+}

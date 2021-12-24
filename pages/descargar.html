@@ -12,6 +12,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../scss/main.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.6.1/css-doodle.min.js"></script>
+    
 </head>
 <body>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -26,7 +28,7 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav ml-auto" style="border-left: 1px solid  #0cbcf0 ;">
+                <ul class="navbar-nav ml-auto" style="border-left: 1px solid  #0cbcf0; margin-left:10px; padding-left:15px;">
                   <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                   </li>
@@ -41,37 +43,107 @@
                   </li>
                 </ul>
                 <div class="d-flex ms-auto">
-                  <a href="registro.html" class="btn btn-primary btn-lg px-4 me-md-3" role="button">Registro</a>
-                  <a href="ingresar.html" class="btn btn-primary btn-lg px-4 me-md-3" role="button">Ingresar</a>
+                  <a href="ingresar.html" class="btn btn-primary btn-lg px-4 me-md-3 my-3" style="margin: 15px;" role="button">Ingresar</a>
                 </div>
               </div>
             </div>
           </nav>
         </div>
-        <div data-aos-once="true" data-aos="fade-up" data-aos-duration="1000" class="container col-xl-10 col-xxl-8 px-4 py-5 my-5">
-            <div class="row align-items-center g-lg-5 py-5">
-        <section  data-aos-once="true" data-aos="fade-up" data-aos-duration="1000" id="about-us">
-            <div class="container">
-              <div class="row align-items-center flex-lg-row-reverse">
-                <div class="col-md-10 mx-auto col-lg-5 my-5" >
-                  <img src="../imagenes/undraw_modern_design_v-3-wv.svg" class="img-fluid" alt="About Us">
-                </div>
-                <div class="col text-col">
-                  <h1 class="titulo_piola">Pagá y manejá tu plata sin fronteras</h1>
-                  <p class="parrafo_color">Manejá tu plata más fácil, enviá o pedí dinero, cargá tu SUBE y pagá lo que vos quieras.</p>
-                </div>
+        <section class="slice py-5 pb-5 my-5" >
+          <div class="container">
+            <div class="row align-items-center flex-lg-row-reverse text-center text-lg-start">
+              <div class="col-md-10 mx-auto col-lg-5 my-5 text-col">
+                <h1 data-aos-once="true" data-aos="fade-up" data-aos-duration="1000" class="titulo_piola text-center text-lg-start">Pagá y manejá tu plata sin fronteras</h1>
+                <p  data-aos-once="true" data-aos="fade-up" data-aos-duration="1000"class="parrafo_color text-center text-lg-start">Manejá tu plata más fácil, enviá o pedí dinero, cargá tu SUBE y pagá lo que vos quieras. Desde tu dispositivo favorito</p>
+              </div>
+              <div data-aos-once="true" data-aos="fade-up" data-aos-duration="1000" class="col-md-10 mx-auto col-lg-5 my-5" >
+                <img src="../imagenes/undraw_devices_re_dxae.svg" class="img-fluid " alt="About Us">
               </div>
             </div>
-          </section> 
-        </div>
-    </div>
           </div>
-        </div>
-      </div>
+      </section>
+        <div class="d-flex justify-content-center align-items-center flex-column">
+            <h1 data-aos-once="true"  data-aos="fade-right"  data-aos-duration="1000"class="fw-bold titulo_piola text-center text-lg-start">Nuestros números hablan por si solos</h1>
+            <p data-aos-once="true" data-aos="fade-right"  data-aos-duration="1000"class="lead parrafo_color my-3 text-center text-lg-start">Con más de 10 años en el negocio bancario local y ahora en el mundo digital</p>
+          </div>
+            <section class="slice slice-lg bg-section-secondary pt-5" id="secondSection">
+              <div class="container container-lg">
+                  <div class="row row-grid align-items-center">
+                      <div class="col-lg-12 ml-lg-auto px-4">
+                          <div class="row">
+                              <div data-aos-once="true" data-aos="fade-up" data-aos-duration="1000" class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+                                  <div class="card shadow-lg rounded-lg border-0 box_somb">
+                                      <div class="px-4 py-5 text-center">
+                                          <div class="h1 font-weight-bolder text-dark mb-0"><span class="counter counting-finished" >1.5</span> <span class="counter-extra ml-n2">M</span>
+                                          </div>
+                                          <h6 class="text-dark">Usuarios activos </h6>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div  data-aos-once="true" data-aos="fade-up" data-aos-duration="1000" class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+                                <div class="card bg-success shadow-lg rounded-lg border-0 box_somb">
+                                    <div class="px-4 py-5 text-center">
+                                        <div class="h1 font-weight-bolder text-white mb-0"><span class="counter counting-finished" >1</span> <span class="counter-extra ml-n2">M</span>
+                                        </div>
+                                        <h6 class="text-white">Transacciones por día </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-aos-once="true" data-aos="fade-up" data-aos-duration="1000" class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+                              <div class="card shadow-lg rounded-lg border-0 box_somb">
+                                  <div class="px-4 py-5 text-center">
+                                      <div class="h1 font-weight-bolder text-dark mb-0"><span class="counter counting-finished" >10</span> <span class="counter-extra ml-n2">Años</span>
+                                      </div>
+                                      <h6 class="text-dark">Activos en el mercado </h6>
+                                  </div>
+                              </div>
+                          </div>
+                          <div data-aos-once="true" data-aos="fade-up" data-aos-duration="1000" class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+                            <div class="card bg-success shadow-lg rounded-lg border-0 box_somb">
+                                <div class="px-4 py-5 text-center">
+                                    <div class="h1 font-weight-bolder text-white mb-0"><span class="counter counting-finished">23</span> <span class="counter-extra ml-n2">k</span>
+                                    </div>
+                                    <h6 class="text-white"> Cambios por hora</h6>
+                                </div>
+                            </div>
+                        </div>
+                          
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+              <section data-aos-once="true" data-aos="fade-up" data-aos-duration="1000" class="slice py-5 pb-5" >
+                <div class="container">
+                  <div class="row align-items-center flex-lg-row-reverse text-center text-lg-start">
+                    <div class="col-md-10 mx-auto col-lg-5 my-5 text-col">
+                      <h1 class="titulo_piola text-center text-lg-start">Descarga Nuestra app para andriod</h1>
+                      <p class="parrafo_color text-center text-lg-start">Bajá la app y viví una nueva experiencia.
+                        Empezá creando tu cuenta sólo con tu DNI.</p>
+                    </div>
+                    <div class="col-md-10 mx-auto col-lg-5 my-5" >
+                      <img src="../imagenes/undraw_android_jr64.svg" class="img-fluid " alt="About Us">
+                    </div>
+                  </div>
+                </div>
+            </section>
+            <section data-aos-once="true" data-aos="fade-up" data-aos-duration="1000" class="slice py-5 pb-5" >
+              <div class="container">
+                <div class="row align-items-center flex-lg-row-reverse text-center text-lg-start">
+                  <div class="col-md-10 mx-auto col-lg-5 my-5" >
+                    <img src="../imagenes/undraw_mobile_user_-7-oqo.svg" class="img-fluid " alt="About Us">
+                  </div>
+                  <div class="col-md-10 mx-auto col-lg-5 my-5 text-col">
+                    <h1 class="titulo_piola text-center text-lg-start">Genra rendimientos semanales.</h1>
+                    <p class="parrafo_color text-center text-lg-start">Con Cospel inversiones podes generar el 40% anual de tu dinero y seguir utilizandolo diariamente</p>
+                  </div>
+                </div>
+              </div>
+          </section>
       <div data-aos-once="true" data-aos="fade-up" data-aos-duration="1000" class="container my-5">
         <div class="d-flex justify-content-center align-items-center flex-column">
-            <h1 data-aos="fade-down"  data-aos-duration="1000"class="fw-bold titulo_piola">INVERTÍ EN TU FUTURO. PASATE A COSPEL</h1>
-            <p data-aos="fade-right"  data-aos-duration="1000"class="lead parrafo_color my-3">Estamos parados en una revolución más grande que la de Internet. ¡Estás a tiempo de ser parte!</p>
+            <h1 data-aos="fade-down"  data-aos-duration="1000"class="fw-bold titulo_piola text-center text-lg-start">INVERTÍ EN TU FUTURO. PASATE A COSPEL</h1>
+            <p data-aos="fade-right"  data-aos-duration="1000"class="lead parrafo_color my-3 text-center text-lg-start">Estamos parados en una revolución más grande que la de Internet. ¡Estás a tiempo de ser parte!</p>
              <a class="btn btn-primary btn-lg px-4 me-md-2 my-2"  data-bs-toggle="modal" href="#exampleModalToggle" role="button">Descargar app</a>
            </div>
             <footer class="text-center text-lg-start">
@@ -79,8 +151,8 @@
                 <div class="container text-center text-md-start mt-5 py-4 footer">
                   <div class="row mt-3">
                     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                      <h4 class=" fw-bold mb-4">
-                        <i class="fas fa-gem me-3 "></i>Cospel</h4>
+                      <h4 class=" fw-bold mb-3">
+                        <i class="fas fa-gem  "></i>Cospel</h4>
                       <p>
                         Cospelbank es un completo sistema de banca electrónica. Tenemos titulares de cuentas de casi todo el mundo. Nuestro sistema es seguro y robusto.
                       </p>
@@ -92,14 +164,14 @@
                       <p><a href="registro.html" class="text-reset">Registro</a></p>
                       <p><a href="ingresar.html" class="text-reset">ingresar</a></p>
                     </div>
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                     <h6 class=" fw-bold mb-3">Enlaces</h6>
                       <p><a href="#!" class="text-reset">Politicas</a></p>
                       <p><a href="#!" class="text-reset">T y C</a></p>
                       <p><a href="#!" class="text-reset">Aviso legal</a></p>
                       <p><a href="#!" class="text-reset">Soporte</a></p>
                     </div>
-                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
+                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                       <h6 class=" fw-bold mb-3">Contacto</h6>
                       <p>Calle Falsa, 123,</p>
                       <p>emo@gmail.com</p>
@@ -135,6 +207,7 @@
               <!--  Fin modal descargar app -->
               <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
             </footer>
+            
           </div>
 </body>
 </html>

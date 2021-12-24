@@ -8,8 +8,31 @@
         font-family: 'Roboto', Arial, sans-serif;
         line-height: 1.5;
         background: #031f34;
+        background-image: radial-gradient(#0dc6fd36, #031f34);
+        --bw: 2px;
+        
+        --bw05: calc(var(--bw) / 2);
+        --wh: 100%;
+        --offset-a: calc((50% - var(--bw05)) * -1);
+        --offset-b: calc(50% - var(--bw05));
+        --truchet: (
+          content: "";
+          display: block;
+          position: absolute;
+          width: var(--wh);
+          height: var(--wh);
+          border: var(--bw) solid #666;
+          border-radius: 100%;
+        );
+        --truchet-a: (
+          transform: translate(var(--offset-a), var(--offset-a));
+        );
+        --truchet-b: (
+          transform: translate(var(--offset-b), var(--offset-b));
+        )
     }
     
     p {
         margin: 0px;
     }
+      
