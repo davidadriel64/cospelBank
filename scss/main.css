@@ -1,4 +1,3 @@
-@import url(./_var.scss);
 * {
   margin: 0;
   padding: 0;
@@ -7,31 +6,10 @@
 }
 
 body {
-  font-family: 'Roboto', Arial, sans-serif;
-  line-height: 1.5;
   background: #031f34;
-  background-image: radial-gradient(#0dc6fd36, #031f34);
-  --bw: 2px;
-  --bw05: calc(var(--bw) / 2);
-  --wh: 100%;
-  --offset-a: calc((50% - var(--bw05)) * -1);
-  --offset-b: calc(50% - var(--bw05));
-  --truchet: (
-          content: "";
-          display: block;
-          position: absolute;
-          width: var(--wh);
-          height: var(--wh);
-          border: var(--bw) solid #666;
-          border-radius: 100%;
-        );
-  --truchet-a: (
-          transform: translate(var(--offset-a), var(--offset-a));
-        );
-  --truchet-b: (
-          transform: translate(var(--offset-b), var(--offset-b));
-        )
-    ;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 p {
@@ -40,17 +18,6 @@ p {
 
 nav {
   background-color: #031f34;
-}
-
-.navbar-brand img {
-  max-height: 50px;
-}
-
-.navbar-brand {
-  font-size: 24px;
-  text-transform: uppercase;
-  font-weight: 900;
-  color: #0d6efd;
 }
 
 nav ul li a {
@@ -62,17 +29,28 @@ nav ul li a:hover {
   color: #683aa4;
 }
 
+.navbar-brand {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #0d6efd;
+}
+
+.navbar-brand img {
+  max-height: 50px;
+}
+
 .navbar-toggler {
   background-color: #007bff !important;
 }
 
-.navbar-toggler .navbar-toggler-icon {
+.navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
 }
 
 .border_nav {
-  -webkit-box-shadow: -3px -3px 20px #6596ff;
-          box-shadow: -3px -3px 20px #6596ff;
+  -webkit-box-shadow: 0px 0px 20px #6596ff;
+          box-shadow: 0px 0px 20px #6596ff;
 }
 
 a:active {
@@ -89,7 +67,7 @@ section {
 }
 
 section h1 {
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: 900;
   color: #683aa4;
   text-align: left;
@@ -174,14 +152,7 @@ button {
           box-shadow: -2px 1px 20px 3px #0989b4 !important;
 }
 
-.footer {
-  color: #0dc6fd;
-  -webkit-box-shadow: 0px 1px 16px #0a58ca !important;
-          box-shadow: 0px 1px 16px #0a58ca !important;
-  margin-top: 0px;
-}
-
-.footerCopy {
+.footer, .footerCopy {
   color: #0dc6fd;
   -webkit-box-shadow: 0px 1px 16px #0a58ca !important;
           box-shadow: 0px 1px 16px #0a58ca !important;
@@ -189,7 +160,7 @@ button {
 }
 
 .text_shadow {
-  TEXT-SHADOW: 0 0 20px rgba(0, 0, 0, 0.411);
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.411);
 }
 
 .form_sesion {

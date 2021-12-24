@@ -3,34 +3,22 @@
     padding: 0;
     box-sizing: border-box;
     }
+  
+$font: (
+    background: #031f34,
+    family: ('Roboto', Arial, sans-serif),
+    size: 16px,
+    line-height: 1.5,
+  );
+   
+ 
+  body {
+    background: map-get($font, background);
+    font-family: map-get($font, family);
+    font-size: map-get($font, size);
+    line-height: map-get($font, line-height);
+  }
 
-    body {
-        font-family: 'Roboto', Arial, sans-serif;
-        line-height: 1.5;
-        background: #031f34;
-        background-image: radial-gradient(#0dc6fd36, #031f34);
-        --bw: 2px;
-        
-        --bw05: calc(var(--bw) / 2);
-        --wh: 100%;
-        --offset-a: calc((50% - var(--bw05)) * -1);
-        --offset-b: calc(50% - var(--bw05));
-        --truchet: (
-          content: "";
-          display: block;
-          position: absolute;
-          width: var(--wh);
-          height: var(--wh);
-          border: var(--bw) solid #666;
-          border-radius: 100%;
-        );
-        --truchet-a: (
-          transform: translate(var(--offset-a), var(--offset-a));
-        );
-        --truchet-b: (
-          transform: translate(var(--offset-b), var(--offset-b));
-        )
-    }
     
     p {
         margin: 0px;

@@ -1,50 +1,55 @@
-@import "./var";
+@import "var";
 
 section {
     padding-top: 50px;
     padding-bottom: 50px;
-  }
-  section h1 {
-    text-transform: uppercase;
+  
+  & h1 {
+    text-transform: none;
     font-weight: 900;
     color: #683aa4;
     text-align: left;
     margin-bottom: 20px;
   }
-  section p {
+  & p {
     font-size: 16px;
     font-weight: 300;
   }
+}
   button {
     max-width: 50%;
     border-radius: 50px !important;
   }
-  #hero .col {
+
+  #hero{ 
+
+  & .col {
     justify-content: center; 
     flex-direction: column;
     display: flex;
   }
-  #hero .img-col {
+  & .img-col {
     justify-content: flex-end; 
     margin-top: 100px;
   }
-  #hero img {
+  & img {
     max-width: 100%!important;
     width: 100%;
   }
-  #hero .card {
+  & .card {
     box-shadow: 15px 20px 16px #0dc6fd;
     border: 0;
     text-align: center;
   }
-  #hero .icon {
+  & .icon {
     width: 100px;
     height: 100px;
     margin-bottom: 20px;
   }
- 
+}
+
 .titulo_color {
-    color: $Color_s;
+    @include color_s;
 }
 
 .parrafo_color {

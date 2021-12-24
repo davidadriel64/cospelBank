@@ -7,3 +7,8 @@ $Color_se: #0dc6fd;
 $Color_sp: #3d6f89;
 $Color_o: #f1b300;
 $Color_n: #adb9ca;
+
+@mixin color_s{
+    color: $Color_s;
+}
+

@@ -1,7 +1,7 @@
-@import url(./_var.scss);
+@import "./var";
 
 .text_shadow {
-    TEXT-SHADOW: 0 0 20px rgba(0, 0, 0, 0.411);
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.411);
 }
 .form_sesion {
     background-color: #031f34e8 !important;
@@ -17,3 +17,4 @@
 .btn-primary:hover {
     background-color: #0091ff !important;
 }
+
