@@ -57,6 +57,9 @@ section {
 }
 
 .mod_box{
-    -webkit-box-shadow: 0px 1px 16px #0a58ca !important;
     box-shadow: 0px 1px 16px #0a58ca !important;
+
+    &-dos{
+      box-shadow: 0px 0px 20px #df65ff;
+    }
 }

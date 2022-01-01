@@ -36,6 +36,10 @@ nav {
 
   .border_nav {
     box-shadow: 0px 0px 20px #6596ff;
+    
+    &-dos {
+      box-shadow: 0px 0px 20px #df65ff;
+    }
   }
   
   a:active { 
@@ -45,4 +49,10 @@ nav {
     color: #0dc6fd!important;
   }
   
-  
+  a {
+    color: #f7f7f7 !important;
+  }
+
+  a:hover {
+    color: #ffffff!important;
+  }
