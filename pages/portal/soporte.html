@@ -14,37 +14,115 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 </head>
-<body style="background: #010028; background-image: url(../../imagenes/fr.png);">  
+<body class="body-admin"">  
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
     AOS.init();
     </script>
-        <div data-aos-once="true" data-aos="zoom-in"  class="container-fluid min-vh-100 d-flex align-items-center justify-content-center flex-column">
-          <div  class="col-md-10 mx-auto col-lg-5 my-3">
-            <form class="p-4 p-md-5 rounded-3 form_sesion text-center" action="">
-              <div class="form-floating mb-3 text_black">
-                <input type="asunto" class="form-control" id="floatingInput" placeholder="Asunto">
-                <label for="floatingInput">Asunto</label>
+         <div class="header container-fluid px-3 py-3">
+          <nav class="py-3 navbar navbar-expand-lg fixed-top auto-hiding-navbar border_nav-dos" style="background: #010028;">
+            <div class="container">
+              <a class="navbar-brand fs-1 fw-bold " href="#">Cospel</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-auto" style="border-left: 1px solid  #0c95f0; margin-left:10px; padding-left:15px;">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="dashboard.html">Dashboard</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="transferencias.html">Transferencias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="criptomonedas.html">Criptomonedas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="cuenta.html">Cuenta</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="soporte.html" >Soporte</a>
+                  </li>
+                </ul>
+                <div class="d-flex ms-auto">
+                  <a href="../../index.html" class="btn btn-danger btn-lg px-4 me-md-3" style="margin: 15px;" role="button">Salir</a>
+                </div>
               </div>
-              <div class="form-floating my-3">
-                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                  <option selected>Seleccionar</option>
-                  <option value="1">Criptomonedas</option>
-                  <option value="2">Fondos</option>
-                  <option value="3">Ventas</option>
-                  <option value="4">Otro</option>
-                </select>
-                <label id="floatingSelect" for="floatingSelect" class="text-dark">Elegir opcion</label>
-              </div>
-              <a data-aos-once="true" data-aos="zoom-in" role="button"class="w-100 btn btn-lg btn-primary my-2" href="prelogin.html" >Enviar Ticket</a>
-              <a data-aos-once="true" data-aos="zoom-in" role="button"class="w-100 btn btn-lg btn-success" href="prelogin.html" >Volver al inicio</a>
-            
-              <hr class="my-4">
-              <small class="text-white"> Soporte Cospel Bank
-              </small>
-            </form>
-          </div>
-        
+            </div>
+          </nav>
         </div>
+        <div data-aos-once="true" data-aos="fade-up"  class="container col-xl-12 col-xxl-12 px-4 pt-5 mt-5">
+          <div class="d-sm-flex align-items-center justify-content-between mb-4 mt-4">
+              <h1 class="h3 mb-0 text-white">Soporte</h1>
+               </div>
+            <div data-aos-once="true" data-aos="fade-up"  class="container-xl px-4 mt-5">
+                <div class="row"> 
+                  <div data-aos-once="true" data-aos="fade-up" class="col-xl-4">
+                    <div class="card mb-4 mod_box-dos fondo_admin text-white">
+                        <div class="card-header">Solicitar un ticket</div>
+                        <div class="card-body">
+                          <form class="p-4 p-md-5text-start" action="">
+                            <div class="form-floating mb-3 text_black">
+                              <input type="asunto" class="form-control" id="floatingInput" placeholder="Asunto">
+                              <label for="floatingInput">Asunto</label>
+                            </div>
+                            <div class="form-floating my-3">
+                              <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                <option selected>Seleccionar</option>
+                                <option value="1">Criptomonedas</option>
+                                <option value="2">Fondos</option>
+                                <option value="3">Ventas</option>
+                                <option value="4">Otro</option>
+                              </select>
+                              <label id="floatingSelect" for="floatingSelect" class="text-dark">Elegir opcion</label>
+                            </div>
+                            <a data-aos-once="true" data-aos="zoom-in" role="button"class="w-100 btn btn-lg btn-primary my-2" href="prelogin.html" >Enviar Ticket</a>
+                             <hr class="my-4">
+                            <small class="text-white"> Soporte Cospel Bank
+                            </small>
+                          </form>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-xl-8" > 
+                      <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Ticket Soporte</h6>
+                        </div>
+                        <div class="card-body">
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Tipo</th>
+                                    <th scope="col">Estado</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><th scope="row">3ffre3s4t</th>
+                                    <td>Deposito</td>
+                                    <td>Solucionado</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">segf43g</th>
+                                    <td>Identidad</td>
+                                    <td>En proceso</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+      <div class="container my-4">
+            <footer class="text-center text-lg-start text-white">
+              <div class="text-center p-4" >
+                © 2021 Copyright </br> Cospelbank Todos los derechos reservados
+              </div>
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+            </footer>
+    </div>
 </body>
 </html>

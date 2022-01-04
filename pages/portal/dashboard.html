@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 </head>
-<body style="background: #010028;"> 
+<body class="body-admin"> 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
     AOS.init();
@@ -53,8 +53,8 @@
         </div>
          <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content" style="background-color: rgb(0 0 0 / 83%);color: cornsilk;">
-                    <div class="modal-header" style="background-color: #23649785;">
+                <div class="modal-content modal-admin">
+                    <div class="modal-header text-dark modal-admin-header">
                   <h5 class="modal-title" id="exampleModalToggleLabel">Enviar fondos</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
@@ -88,8 +88,8 @@
           </div>
             <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content" style="background-color: rgb(0 0 0 / 83%);color: cornsilk;">
-                    <div class="modal-header" style="background-color: #23649785;">
+                    <div class="modal-content modal-admin">
+                    <div class="modal-header text-dark modal-admin-header">
                     <h5 class="modal-title" id="exampleModalToggleLabel">Ingresar fondos</h5>
                     <button type="button" class="btn-close color-primary" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
@@ -132,7 +132,9 @@
                                     <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
                                 </div>
                                 <div class="col-auto">
-                                    <i class="bi bi-currency-dollar"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                                        <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                                      </svg>
                                 </div>
                             </div>
                         </div>
@@ -148,14 +150,16 @@
                                     <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
                                 </div>
                                 <div class="col-auto">
-                                    <i class="bi bi-currency-dollar"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                                        <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                                      </svg>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6 mb-4">
-                    <div class="card border-left-white h-100 py-2 mod_box-dos text-white" style="background-color: #fff0 ">
+                    <div class="card border-left-white h-100 py-2 mod_box-dos fondo_admin text-white">
                         <div class="card-body">
                             <div class="row no-gutters align-items-center">
                                 <div class="col mr-2">
@@ -167,7 +171,7 @@
                                         </div>
                                         <div class="col">
                                             <div class="progress progress-sm mr-2">
-                                                <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                <div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -180,19 +184,19 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6 mb-4">
-                    <div class="card border-left-white h-100 py-2 mod_box-dos text-white" style="background-color: #fff0 ">
+                    <div class="card border-left-white h-100 py-2 mod_box-dos fondo_admin text-white">
                         <div class="card-body">
                             <div class="row no-gutters align-items-center">
                                 <div class="col mr-2">
-                                    <div class="text-xs font-weight-bold text-uppercase mb-1">Retirado en el mes
+                                    <div class="text-xs font-weight-bold text-uppercase mb-1">Rendimientos en pesos
                                     </div>
                                     <div class="row no-gutters align-items-center">
                                         <div class="col-auto">
-                                            <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">80%</div>
+                                            <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">69%</div>
                                         </div>
                                         <div class="col">
                                             <div class="progress progress-sm mr-2">
-                                                <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                <div class="progress-bar bg-info" role="progressbar" style="width: 69%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -225,7 +229,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card mb-4 mod_box-dos text-white" style="background-color: #fff0 ">
+                    <div class="card mb-4 mod_box-dos fondo_admin text-white">
                         <div class="card-header py-3" >
                             <h6 class="m-0 font-weight-bold">Datos cuenta</h6>
                         </div>
@@ -241,7 +245,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card mb-4 mod_box-dos text-white" style="background-color: #fff0 ">
+                    <div class="card mb-4 mod_box-dos fondo_admin text-white">
                         <div class="card-header py-3" >
                             <h6 class="m-0 font-weight-bold">Información importante</h6>
                         </div>

@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     
 </head>
-<body style="background: #010028;"> 
+<body class="body-admin"> 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
     AOS.init();
@@ -54,9 +54,9 @@
         </div>
         <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content" style="background-color: rgb(0 0 0 / 83%);color: cornsilk;">
-                <div class="modal-header" style="background-color: #23649785;">
-                  <h5 class="modal-title" id="exampleModalToggleLabel">Convertir fondos A USD</h5>
+              <div class="modal-content modal-admin">
+                <div class="modal-header text-dark modal-admin-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel">Convertir fondos A USD</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -84,9 +84,9 @@
           </div>
             <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content" style="background-color: rgb(0 0 0 / 83%);color: cornsilk;">
-                    <div class="modal-header" style="background-color: #23649785;">
-                    <h5 class="modal-title" id="exampleModalToggleLabel">Convertir a BTC</h5>
+                  <div class="modal-content modal-admin">
+                    <div class="modal-header text-dark modal-admin-header">
+                      <h5 class="modal-title" id="exampleModalToggleLabel">Convertir a BTC</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -150,11 +150,11 @@
                     </div>
                 </div>
                 <div class="col-xl-6 col-md-12 mb-4">
-                    <div class="card border-left-white h-100 py-2 mod_box-dos text-white" style="background-color: #fff0 ">
+                    <div class="card border-left-white h-100 py-2 mod_box-dos fondo_admin text-white">
                         <div class="card-body">
                             <div class="row no-gutters align-items-center">
                                 <div class="col mr-2">
-                                    <div class="text-xs font-weight-bold text-uppercase mb-1">Saldo en BTC
+                                    <div class="text-xs font-weight-bold text-uppercase mb-1">Rendimientos en BTC
                                     </div>
                                     <div class="row no-gutters align-items-center">
                                         <div class="col-auto">
@@ -162,7 +162,7 @@
                                         </div>
                                         <div class="col">
                                             <div class="progress progress-sm mr-2">
-                                                <div class="progress-bar bg-info" role="progressbar" style="width: 67%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 67%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -196,7 +196,7 @@
                         </div>
                     </div>
                     
-                    <div class="card mb-4 mod_box-dos text-white" style="background-color: #fff0 ">
+                    <div class="card mb-4 mod_box-dos fondo_admin text-white" >
                         <div class="card-header py-3" >
                             <h6 class="m-0 font-weight-bold">Transacciones recientes</h6>
                         </div>
@@ -251,7 +251,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 mb-4">
-                    <div class="card mb-4 mod_box-dos text-white" style="background-color: #fff0 ">
+                    <div class="card mb-4 mod_box-dos fondo_admin text-white" >
                         <div class="card-header py-3" >
                             <h6 class="m-0 font-weight-bold">Valor actual criptomonedas</h6>
                         </div>
