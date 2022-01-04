@@ -28,19 +28,22 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav ml-auto" style="border-left: 1px solid  #0c95f0; margin-left:10px; padding-left:15px;">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Dashboard</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="modal" href="#exampleModalToggle">Enviar</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="modal" href="#exampleModalToggle3">Ingresar</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="soporte.html" >Soporte</a>
-                  </li>
-                </ul>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="transferencias.html">Transferencias</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="criptomonedas.html">Criptomonedas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="cuenta.html">Cuenta</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="soporte.html" >Soporte</a>
+                    </li>
+                  </ul>
                 <div class="d-flex ms-auto">
                   <a href="../../index.html" class="btn btn-danger btn-lg px-4 me-md-3" style="margin: 15px;" role="button">Salir</a>
                 </div>
@@ -50,19 +53,24 @@
         </div>
          <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-content" style="background-color: rgb(0 0 0 / 83%);color: cornsilk;">
+                    <div class="modal-header" style="background-color: #23649785;">
                   <h5 class="modal-title" id="exampleModalToggleLabel">Enviar fondos</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                         <div class="col-auto mx-auto">
                             <form class="p-4 p-md-5 text-center">
-                                <div class="form-floating mb-3 text_black">
-                                  <input type="number" class="form-control" id="monto" placeholder="456453">
-                                  <label for="floatingInput">Ingresar monto </label>
-                                </div>
-                                <div class="form-floating mb-3 text_black">
+                                <div class="input-group ">
+                                    <span class="input-group-text" id="basic-addon1">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-cash-stack" viewBox="0 0 16 16">
+                                        <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1H1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"></path>
+                                        <path d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V5zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2H3z"></path>
+                                    </svg>
+                                    </span>
+                                    <input type="text" class="form-control" placeholder="Ingresar Monto" aria-label="Input group example" aria-describedby="basic-addon1">
+                                  </div>
+                                <div class="form-floating my-3 text_black">
                                   <input type="email" class="form-control" id="email" placeholder="contraseña">
                                   <label for="floatingPassword ">Email del usuario</label>
                                 </div>
@@ -73,30 +81,39 @@
                                 </div>
                          </form>
                           <a  role="button" class="w-100 btn btn-lg btn-primary  aos-init aos-animate" href="transferecia-ok.html">Enviar fondos</a>
-                        </div>
+                         </div>
+                    </div>
                 </div>
-              </div>
             </div>
           </div>
             <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
+                    <div class="modal-content" style="background-color: rgb(0 0 0 / 83%);color: cornsilk;">
+                    <div class="modal-header" style="background-color: #23649785;">
                     <h5 class="modal-title" id="exampleModalToggleLabel">Ingresar fondos</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close color-primary" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                             <div class="col-auto mx-auto">
                                 <form class="p-4 p-md-5 text-center">
-                                    <div class="form-floating mb-3 text_black">
-                                    <input type="number" class="form-control" id="monto" placeholder="456453">
-                                    <label for="floatingInput">Ingresar monto </label>
-                                    </div>
+                                    <div class="input-group ">
+                                        <span class="input-group-text" id="basic-addon1">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-cash-stack" viewBox="0 0 16 16">
+                                            <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1H1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"></path>
+                                            <path d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V5zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2H3z"></path>
+                                        </svg>
+                                        </span>
+                                        <input type="text" class="form-control" placeholder="Ingresar Monto" aria-label="Input group example" aria-describedby="basic-addon1">
+                                      </div>
+                                    <div class="form-floating my-3 text_black">
+                                        <input type="cbu" class="form-control" id="floatingInput" placeholder="CBU">
+                                        <label for="floatingInput">CBU</label>
+                                      </div>
                             </form>
                             <a  role="button" class="w-100 btn btn-lg btn-primary  aos-init aos-animate" href="ingresarfondos-ok.html">Ingresar fondos</a>
                             </div>
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
         <div data-aos-once="true" data-aos="fade-up"  class="container col-xl-12 col-xxl-12 px-4 pt-5 mt-5">
@@ -127,7 +144,7 @@
                             <div class="row no-gutters align-items-center">
                                 <div class="col mr-2">
                                     <div class="text-xs font-weight-bold text-uppercase mb-1">
-                                        Ingreso este año</div>
+                                       Criptomonedas</div>
                                     <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
                                 </div>
                                 <div class="col-auto">
@@ -192,18 +209,18 @@
                 <div class="col-lg-6 mb-4">
                     <div class="row">
                         <div class="col-lg-6 mb-4">
-                            <div class="card mod_box text-white" style="background-color: rgb(13 110 253); "  data-bs-toggle="modal" href="#exampleModalToggle3">
+                            <div class="card mod_box text-white btn-primary" data-bs-toggle="modal" href="#exampleModalToggle3">
                                 <div class="card-body d-flex justify-content-between">
                                     Ingresar Dinero
-                                    <div class="text-black-50 small"><i class="bi bi-arrow-down-circle-fill"></i></div>
+                                    <div class="text-white small"><i class="bi bi-arrow-down-circle-fill"></i></div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 mb-4">
-                            <div class="card mod_box-dos text-white" style="background-color: #dc3545; box-shadow: 0px 1px 16px #dc3545 !important;"  data-bs-toggle="modal" href="#exampleModalToggle">
+                            <div class="card mod_box-dos text-white btn-danger" style="box-shadow: 0px 1px 16px #dc3545 !important;"  data-bs-toggle="modal" href="#exampleModalToggle">
                                 <div class="card-body d-flex justify-content-between">
-                                    Retirar Dinero
-                                    <div class="text-black-50 small"><i class="bi bi-arrow-up-circle-fill"></i></div>
+                                    Enviar Dinero
+                                    <div class="text-white small"><i class="bi bi-arrow-up-circle-fill"></i></div>
                                 </div>
                             </div>
                         </div>
@@ -250,7 +267,7 @@
                             <div class="text-center">
                                 <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 5rem;" src="../../imagenes/paypal.png" alt="...">
                             </div>
-                            <p>Los sistemas de pago son muy importantes en nuestra plataforma, por esta razon estamos muy orgullosos de anunciar que logramos una alianza con paypal, en la cual el no le descontaremos ningun porcentaje transferido entre plataformas.</p>
+                            <p>Los sistemas de pago son muy importantes en nuestra plataforma, por esta razon estamos muy orgullosos de anunciar que logramos una alianza con paypal, en la cual no le descontaremos ningun porcentaje transferido entre plataformas.</p>
                             
                         </div>
                     </div>

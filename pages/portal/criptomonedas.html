@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../imagenes/favicon.png"> 
+    <title>Tus Criptomonedas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../scss/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    
+</head>
+<body style="background: #010028;"> 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+         <div class="header container-fluid px-3 py-3">
+          <nav class="py-3 navbar navbar-expand-lg fixed-top auto-hiding-navbar border_nav-dos" style="background: #010028;">
+            <div class="container">
+              <a class="navbar-brand fs-1 fw-bold " href="#">Cospel</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-auto" style="border-left: 1px solid  #0c95f0; margin-left:10px; padding-left:15px;">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="transferencias.html">Transferencias</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="criptomonedas.html">Criptomonedas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="cuenta.html">Cuenta</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="soporte.html" >Soporte</a>
+                    </li>
+                  </ul>
+                <div class="d-flex ms-auto">
+                  <a href="../../index.html" class="btn btn-danger btn-lg px-4 me-md-3" style="margin: 15px;" role="button">Salir</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content" style="background-color: rgb(0 0 0 / 83%);color: cornsilk;">
+                <div class="modal-header" style="background-color: #23649785;">
+                  <h5 class="modal-title" id="exampleModalToggleLabel">Convertir fondos A USD</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                        <div class="col-auto mx-auto">
+                            <form class="p-4 p-md-5 text-center">
+                                <div class="form-floating mb-3 text_black">
+                                  <input type="number" class="form-control" id="monto" placeholder="456453">
+                                  <label for="floatingInput">Monto en cripto </label>
+                                </div>
+                                <div class="form-floating mb-3 text_black">
+                                    <p class="mb-0 text-white">BTC: 0.3863562823238
+                                    </p>
+                                </div>
+                                <div class="checkbox mb-3">
+                                  <label>
+                                    <input type="checkbox" value="remember-me"> Aceptar terminos de transferencias
+                                  </label>
+                                </div>
+                         </form>
+                          <a  role="button" class="w-100 btn btn-lg btn-primary  aos-init aos-animate" href="transferecia-ok.html">Convertir fondos a USD</a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+            <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content" style="background-color: rgb(0 0 0 / 83%);color: cornsilk;">
+                    <div class="modal-header" style="background-color: #23649785;">
+                    <h5 class="modal-title" id="exampleModalToggleLabel">Convertir a BTC</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                            <div class="col-auto mx-auto">
+                                <form class="p-4 p-md-5 text-center">
+                                    <div class="form-floating mb-3 text_black">
+                                    <input type="number" class="form-control" id="monto" placeholder="456453">
+                                    <label for="floatingInput">Ingresar monto </label>
+                                    </div>
+                                    <div class="form-floating mb-3 text_black">
+                                        <p class="mb-0 text-white">USD: $40.000
+                                        </p>
+                                    </div>
+                            </form>
+                            <a  role="button" class="w-100 btn btn-lg btn-primary  aos-init aos-animate" href="ingresarfondos-ok.html">Convertir fondos a BTC</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div data-aos-once="true" data-aos="fade-up"  class="container col-xl-12 col-xxl-12 px-4 pt-5 mt-5">
+            <div class="d-sm-flex align-items-center justify-content-between mb-4 mt-4">
+                <h1 class="h3 mb-0 text-white">Zona Criptomonedas </h1>
+                <a href="soporte.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"> Contactar soporte</a>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-left-success h-100 py-2 bg-warning text-white shadow">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col mr-2">
+                                    <div class="text-xs font-weight-bold  text-uppercase mb-1">
+                                        Saldo BTC</div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800">$255,000</div>
+                                </div>
+                                <div class="col-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-currency-bitcoin" viewBox="0 0 16 16">
+                                        <path d="M5.5 13v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.5v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.084c1.992 0 3.416-1.033 3.416-2.82 0-1.502-1.007-2.323-2.186-2.44v-.088c.97-.242 1.683-.974 1.683-2.19C11.997 3.93 10.847 3 9.092 3H9V1.75a.25.25 0 0 0-.25-.25h-1a.25.25 0 0 0-.25.25V3h-.573V1.75a.25.25 0 0 0-.25-.25H5.75a.25.25 0 0 0-.25.25V3l-1.998.011a.25.25 0 0 0-.25.25v.989c0 .137.11.25.248.25l.755-.005a.75.75 0 0 1 .745.75v5.505a.75.75 0 0 1-.75.75l-.748.011a.25.25 0 0 0-.25.25v1c0 .138.112.25.25.25L5.5 13zm1.427-8.513h1.719c.906 0 1.438.498 1.438 1.312 0 .871-.575 1.362-1.877 1.362h-1.28V4.487zm0 4.051h1.84c1.137 0 1.756.58 1.756 1.524 0 .953-.626 1.45-2.158 1.45H6.927V8.539z"/>
+                                      </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-left-primary h-100 py-2 bg-primary text-white shadow">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col mr-2">
+                                    <div class="text-xs font-weight-bold text-uppercase mb-1">
+                                       Saldo en cuenta</div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
+                                </div>
+                                <div class="col-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                                        <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                                      </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-12 mb-4">
+                    <div class="card border-left-white h-100 py-2 mod_box-dos text-white" style="background-color: #fff0 ">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col mr-2">
+                                    <div class="text-xs font-weight-bold text-uppercase mb-1">Saldo en BTC
+                                    </div>
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-auto">
+                                            <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">67%</div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="progress progress-sm mr-2">
+                                                <div class="progress-bar bg-info" role="progressbar" style="width: 67%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="bi bi-bank"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="row">
+                        <div class="col-lg-6 mb-4">
+                            <div class="card mod_box text-white btn-primary" data-bs-toggle="modal" href="#exampleModalToggle3">
+                                <div class="card-body d-flex justify-content-between">
+                                    Convertir a BTC
+                                    <div class="text-white small"><i class="bi bi-arrow-down-circle-fill"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="card mod_box-dos text-white btn-danger" style="box-shadow: 0px 1px 16px #dc3545 !important;"  data-bs-toggle="modal" href="#exampleModalToggle">
+                                <div class="card-body d-flex justify-content-between">
+                                    Pasar a USD
+                                    <div class="text-white small"><i class="bi bi-arrow-up-circle-fill"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card mb-4 mod_box-dos text-white" style="background-color: #fff0 ">
+                        <div class="card-header py-3" >
+                            <h6 class="m-0 font-weight-bold">Transacciones recientes</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3  my-1" aria-current="true" style="background-color: #031f34e8 !important;">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <div class="d-flex gap-2 w-100 justify-content-between">
+                                    <div>
+                                      <h6 class="mb-0">Transferencia</h6>
+                                      <p class="mb-0 opacity-75">N°161684sda
+                                      </p>
+                                    </div>
+                                    <small class="opacity-50 text-nowrap">N°161684sda</small>
+                                  </div>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3  my-1" aria-current="true" style="background-color: #031f34e8 !important;">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <div class="d-flex gap-2 w-100 justify-content-between">
+                                    <div>
+                                      <h6 class="mb-0">Transferencia</h6>
+                                      <p class="mb-0 opacity-75">N°161684sda
+                                      </p>
+                                    </div>
+                                    <small class="opacity-50 text-nowrap">N°161684sda</small>
+                                  </div>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3  my-1" aria-current="true" style="background-color: #031f34e8 !important;">
+                                  <i class="bi bi-check-circle-fill"></i>
+                                  <div class="d-flex gap-2 w-100 justify-content-between">
+                                  <div>
+                                    <h6 class="mb-0">Transferencia</h6>
+                                    <p class="mb-0 opacity-75">N°161684sda
+                                    </p>
+                                  </div>
+                                  <small class="opacity-50 text-nowrap">N°161684sda</small>
+                                </div>
+                              </a>
+                              <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3  my-1" aria-current="true" style="background-color: #031f34e8 !important;">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <div class="d-flex gap-2 w-100 justify-content-between">
+                                <div>
+                                  <h6 class="mb-0">Transferencia</h6>
+                                  <p class="mb-0 opacity-75">N°161684sda
+                                  </p>
+                                </div>
+                                <small class="opacity-50 text-nowrap">N°161684sda</small>
+                              </div>
+                            </a>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card mb-4 mod_box-dos text-white" style="background-color: #fff0 ">
+                        <div class="card-header py-3" >
+                            <h6 class="m-0 font-weight-bold">Valor actual criptomonedas</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-borderless text-white mg-b-0">
+                                  <thead>
+                                    <tr class="text-10 text-spacing-1 text-semibold text-color-03">
+                                      <th>Moneda</th>
+                                      <th class="text-right">Ultimo precio</th>
+                                      <th class="text-right">% Cambio</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td><strong>BTC</strong></td>
+                                      <td class="text-right ">$160.43</td>
+                                      <td class="text-right "><span class="text-success">4.34% <i class=" bi bi-arrow-up"></i></span></td>
+                                    </tr>
+                                    <tr>
+                                      <td><strong>ETH</strong></td>
+                                      <td class="text-right ">$136.99</td>
+                                      <td class="text-right "><span class="text-danger">0.77% <i class=" bi bi-arrow-down"></i></span></td>
+                                    </tr>
+                                    <tr>
+                                      <td><strong>DASH</strong></td>
+                                      <td class="text-right ">$90.53</td>
+                                      <td class="text-right "><span class="text-danger">0.80% <i class=" bi bi-arrow-down"></i></span></td>
+                                    </tr>
+                                    <tr>
+                                      <td><strong>BSV</strong></td>
+                                      <td class="text-right ">$66.34</td>
+                                      <td class="text-right "><span class="text-danger">1.61% <i class="bi bi-arrow-down"></i></span></td>
+                                    </tr>
+                                    <tr>
+                                      <td><strong>LTC</strong></td>
+                                      <td class="text-right ">$58.91</td>
+                                      <td class="text-right "><span class="text-danger">2.17% <i class=" bi bi-arrow-down"></i></span></td>
+                                    </tr>
+                                    <tr>
+                                      <td><strong>ZEC</strong></td>
+                                      <td class="text-right ">$53.57</td>
+                                      <td class="text-right "><span class="text-success">0.59% <i class=" bi bi-arrow-up"></i></span></td>
+                                    </tr>
+                                    <tr>
+                                      <td><strong>XMR</strong></td>
+                                      <td class="text-right ">$52.36</td>
+                                      <td class="text-right "><span class="text-success">0.42% <i class=" bi bi-arrow-up"></i></span></td>
+                                    </tr>
+                                    <tr>
+                                      <td><strong>BTG</strong></td>
+                                      <td class="text-right ">$13.09</td>
+                                      <td class="text-right "><span class="text-danger">0.56% <i class=" bi bi-arrow-down"></i></span></td>
+                                    </tr>
+                                    <tr>
+                                      <td><strong>NEO</strong></td>
+                                      <td class="text-right ">$9.06</td>
+                                      <td class="text-right "><span class="text-danger">0.83% <i class=" bi bi-arrow-down"></i></span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+      <div class="container my-4">
+            <footer class="text-center text-lg-start text-white">
+              <div class="text-center p-4" >
+                © 2021 Copyright </br> Cospelbank Todos los derechos reservados
+              </div>
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+            </footer>
+    </div>
+</body>
+</html>
